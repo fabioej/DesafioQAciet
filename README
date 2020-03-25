@@ -1,0 +1,18 @@
+O codigo foi feito usando BDD com cucumber e a linguagem ruby, a motivação é que utilizando Gherkin os
+casos de testes são facilmente compreendidos(ja temos um documento de testes), bem como, 
+a implementação do código e de sua logica se tornam simples.
+
+Quanto a estrutura:
+ - Tanto para o cenario em que o usuario busca por um produto quanto o que busca por dois, utilizei a técnica 
+de DDT(Data Driven Testing) que através de uma tabela possibilita um reaproveitamento de código e torna possivel
+uma futura escalabilidade dos casos de testes.
+ - Para o cenario que devo deletar o item do carrinho, valido através das mensagens exibidas pelo sistema 
+se de fato o item foi removido do carrinho.
+ - Utilizei tambem o page object, que torna o codigo mais limpo e de manutenção de mais simples.
+
+ 
+Executar:
+Para executar o casos de testes, na pasta do projeto você deve usar os comandos:
+
+cucumber -t @comprar_produtos  -> para executar os cenarios de incluir 1 produto e 2 produtos no carrinho
+cucumber -t @deletar_carrinho  -> para remover do carinho o item
