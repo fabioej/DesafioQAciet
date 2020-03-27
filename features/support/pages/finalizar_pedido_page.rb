@@ -2,7 +2,7 @@ class FinalizarPedidoPage
     include Capybara::DSL
 
     def frete
-        find('td', text: 'Padrão').click
+        find('td', text: 'Econômica').click
     end
 
     def selecionar_forma_pagamento

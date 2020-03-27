@@ -7,7 +7,7 @@ class ProcurarProdutoPage
     end
 
     def selecionar
-        find("h2>a[alt*='//www.carrefour.com.br/Console-Playstation-4-Mega-Pack-Bundle-Sony/p/MP21727378']").click
+        find("h2>a[alt*='//www.carrefour.com.br/Console-Playstation-4-Slim-1TB-com-3-Jogos-Days-Gone-Detroit-e-Rainbow-Six-Sony/p/MP17676186']").click
     end
 
     def entrar_carrinho
